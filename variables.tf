@@ -2,7 +2,7 @@
 
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "us-west-1"
+  default     = "us-east-1"
 }
 
 variable "ecs_task_execution_role_name" {
@@ -16,8 +16,8 @@ variable "az_count" {
 }
 
 variable "app_image" {
-  description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
+  description = "Image to run in the ECS cluster"
+  default     = "456131486398.dkr.ecr.us-east-1.amazonaws.com/dinipere-app-repo:v1"
 }
 
 variable "app_port" {
