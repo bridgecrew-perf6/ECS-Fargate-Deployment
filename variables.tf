@@ -7,7 +7,7 @@ variable "aws_region" {
 
 variable "ecs_task_execution_role_name" {
   description = "ECS task execution role name"
-  default     = "myEcsTaskExecuteRole"
+  default     = "eTaskExecuteRole"
 }
 
 variable "az_count" {
@@ -21,12 +21,12 @@ variable "app_image" {
 }
 
 variable "app_port" {
-  description = "Port exposed by the docker image to redirect traffic to"
+  description = "Port exposed by the image to redirect traffic to"
   default     = 80
 }
 
 variable "app_count" {
-  description = "Number of docker containers to run"
+  description = "Number of containers to run"
   default     = 1
 }
 
