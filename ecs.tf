@@ -15,7 +15,7 @@ resource "aws_ecs_task_definition" "app" {
   container_definitions = jsonencode([
     {
       name      = "myapp"
-      image     = "456131486398.dkr.ecr.us-east-1.amazonaws.com/dinipere-app-repo:v1"
+      image     = "456131486398.dkr.ecr.us-east-1.amazonaws.com/test:latest"
       cpu       = 10
       memory    = 512
       essential = true

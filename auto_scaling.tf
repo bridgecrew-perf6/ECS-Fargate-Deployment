@@ -1,6 +1,6 @@
 # auto_scaling.tf
 
-resource "aws_appautoscaling_target" "target" {
+/*resource "aws_appautoscaling_target" "target" {
   service_namespace  = "ecs"
   resource_id        = "service/${aws_ecs_cluster.main.name}/${aws_ecs_service.main.name}"
   scalable_dimension = "ecs:service:DesiredCount"
@@ -86,4 +86,4 @@ resource "aws_cloudwatch_metric_alarm" "service_cpu_low" {
   }
 
   alarm_actions = [aws_appautoscaling_policy.down.arn]
-}
+} */

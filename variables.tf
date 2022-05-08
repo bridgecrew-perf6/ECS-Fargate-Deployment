@@ -17,7 +17,7 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Image to run in the ECS cluster"
-  default     = "456131486398.dkr.ecr.us-east-1.amazonaws.com/dinipere-app-repo:v1"
+  default     = "456131486398.dkr.ecr.us-east-1.amazonaws.com/test:latest"
 }
 
 variable "app_port" {
@@ -27,7 +27,7 @@ variable "app_port" {
 
 variable "app_count" {
   description = "Number of containers to run"
-  default     = 1
+  default     = 2
 }
 
 variable "health_check_path" {
